@@ -68,7 +68,7 @@ def perform_eda(df: pd.DataFrame) -> None:
     plt.savefig('images/eda/Total_Trans_Ct_hist.png')
 
     plt.figure(figsize=(20, 10))
-    sns.heatmap(df.corr(), annot=False, cmap='Dark2_r', linewidths=2)
+    sns.heatmap(df.corr(numeric_only=True), annot=False, cmap='Dark2_r', linewidths=2)
     plt.savefig('images/eda/heatmap.png')
 
 
@@ -163,6 +163,7 @@ def classification_report_image(y_train,
     output:
              None
     '''
+    plt.figure(figsize=(20, 10))
     plt.rc('figure', figsize=(5, 5))
     plt.text(0.01, 1.25, str('Random Forest Train Results'),
              {'fontsize': 10}, fontproperties='monospace')
@@ -173,6 +174,7 @@ def classification_report_image(y_train,
             'fontsize': 10}, fontproperties='monospace')
     plt.savefig('images/results/rf_train.png')
 
+    plt.figure(figsize=(20, 10))
     plt.rc('figure', figsize=(5, 5))
     plt.text(0.01, 0.6, str('Random Forest Test Results'),
              {'fontsize': 10}, fontproperties='monospace')
@@ -183,6 +185,7 @@ def classification_report_image(y_train,
             'fontsize': 10}, fontproperties='monospace')
     plt.savefig('images/results/rf_test.png')
 
+    plt.figure(figsize=(20, 10))
     plt.rc('figure', figsize=(5, 5))
     plt.text(0.01, 0.6, str('Logistic Regression Train Results'),
              {'fontsize': 10}, fontproperties='monospace')
@@ -193,6 +196,7 @@ def classification_report_image(y_train,
             'fontsize': 10}, fontproperties='monospace')
     plt.savefig('images/results/lr_train.png')
 
+    plt.figure(figsize=(20, 10))
     plt.rc('figure', figsize=(5, 5))
     plt.text(0.01, 0.6, str('Logistic Regression Test Results'),
              {'fontsize': 10}, fontproperties='monospace')

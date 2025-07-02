@@ -3,13 +3,37 @@
 - Project **Predict Customer Churn** of ML DevOps Engineer Nanodegree Udacity
 
 ## Project Description
-Your project description here.
+Customer Churn Prediction helps to identify the customers who will likely leave in a while.
+This can help businesses either not to focus on them or offer better offers to save them.
+Both of the methods lead to the business growth, therefore it's quite helpful 0_0
 
 ## Files and data description
-Overview of the files and data present in the root directory. 
+---data
+------bank_data.csv — a csv file with the dataset used for training the model (taken from Udacity)
+
+---images
+------eda — EDA images, initial dataset analysis
+------results — after-training analysis (such as feature importance etc.)
+
+---models
+------logistic_model.pkl — Logistic Regression Model
+------rfc_model.pkl — Random Forest Classifier (the best)
+
+---churn_library.py — the main file with refactored code
+
+---churn_notebook.ipynb — a notebook with an initial solution
+
+---README.md — You are reading this file btw :)
+
+---requirements_py3.13.txt — requirements to be able to run this code
+
+---test_churn_library.py — a file with tests for every function in churn_library.py
 
 ## Running Files
-How do you run your files? What should happen when you run your files?
+For running the main code use ipython `churn_library.py`,
+after that you should see new files in images and models
+
+To run the unit tests use `pytest`, you will see a report in your command line (5 tests).
 
 
 
