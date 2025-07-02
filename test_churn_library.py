@@ -1,5 +1,10 @@
 '''
-Unit Tests for churn_library
+Author: Kristian Komarov
+Date Created: 02.07.2025
+
+This module tests different functions from churn_library module and
+log any INFO or ERROR into churn_library.log file. The tests functions
+are written to prevent the functions from churn_library module from breaking.
 '''
 
 import logging

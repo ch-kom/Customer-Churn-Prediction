@@ -1,5 +1,9 @@
 '''
-Train ML models to predict Customer Churn and save it, perform EDA on the data and save result images
+Author: Kristian Komarov
+Date Created: 02.07.2025
+
+This module creates models to predict customer churn.
+It analyzes the data, performs EDA, trains models and analyzes the performance and the feature importance.
 '''
 
 import os
